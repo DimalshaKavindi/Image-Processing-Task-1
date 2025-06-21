@@ -5,7 +5,6 @@ import numpy as np
 # Read the original image
 image = cv2.imread('data/image.jpg')
 
-# Function to rotate image without cropping
 def rotate_image(image, angle):
     (h, w) = image.shape[:2]
     center = (w // 2, h // 2)
@@ -36,7 +35,7 @@ windows = [
 
 for name, img in windows:
     cv2.namedWindow(name, cv2.WINDOW_NORMAL)
-    cv2.resizeWindow(name, 640, 480)  # Fixed size as in your original code
+    cv2.resizeWindow(name, 640, 480)
     cv2.imshow(name, img)
 
 cv2.waitKey(0)

@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 import os
 
-# Create results directory if it doesn't exist
 os.makedirs('results', exist_ok=True)
 
 # Read the image

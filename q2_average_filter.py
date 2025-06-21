@@ -36,6 +36,5 @@ average_3x3()
 average_10x10()
 average_20x20()
 
-# Wait for a key press and close the window
 cv2.waitKey(0)
 cv2.destroyAllWindows()
